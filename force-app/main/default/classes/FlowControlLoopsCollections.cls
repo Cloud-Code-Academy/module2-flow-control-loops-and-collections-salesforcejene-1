@@ -216,17 +216,22 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String repeatString(String inputString, Integer repeatCount) {
         // Initialize the result String
-
+        String msg = '';
+        String semiSpace = '; ';
         // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
+        
+        for (Integer i = 0; i < repeatCount; i++) {
             // If it is not the last iteration, add a semicolon to separate the strings
+            if (i < repeatCount){
+                msg += inputString + semiSpace;
+            }
         }
-        */
+        //trim out the semi and space chars
+        msg = msg.substring(0, msg.length()-2);
+        System.debug('Display msg::::: ' + msg);
 
-        // Return the final result string
-        return null; // Replace null with the variable you used to store the result
+        // Return the final result string        
+        return msg;
     }
 
     /**
