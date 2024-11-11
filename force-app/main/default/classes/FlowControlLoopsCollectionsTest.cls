@@ -49,7 +49,7 @@ public with sharing class FlowControlLoopsCollectionsTest {
         Assert.areEqual(null, result, 'Incorrect result when both numbers are null');
     }
 
-    @IsTest
+    @IsTest 
     static void testCheckNumber() {
         String result = FlowControlLoopsCollections.checkNumber(5);
         Assert.areEqual('Positive', result, 'Incorrect result for positive number');
